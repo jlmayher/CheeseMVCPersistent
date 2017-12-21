@@ -102,7 +102,7 @@ namespace CheeseMVC.Controllers
 
                     return Redirect("/Menu/ViewMenu/" + newMenuItem.MenuID);
                 }
-                return View(addMenuItemViewModel);             
+                return Redirect("/Menu/ViewMenu/" + addMenuItemViewModel.MenuID);
             }
 
             return View(addMenuItemViewModel);
