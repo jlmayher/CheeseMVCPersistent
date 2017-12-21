@@ -1,7 +1,7 @@
 ﻿@model CheeseMVC.ViewModels.ViewMenuViewModel
 
 @{
-    ViewBag.Title = "@viewMenuViewModel.Menu.Name";
+    ViewBag.Title = Model.Menu.Name;
 }
 
 <h1>@ViewBag.Title</h1>
@@ -13,4 +13,4 @@
     }
 </ul>
 
-<a asp-controller="Menu" asp-action="AddItem" asp-route-id="@Model.Menu.ID">Add and Item</a>
+<a asp-controller="Menu" asp-action="AddItem" asp-route-id="@Model.Menu.ID">Add an Item</a>
